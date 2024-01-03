@@ -2,16 +2,12 @@ name: Main
 on: [push]
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
         - name: Checkout
         uses: actions/checkout@v4
         - name: yarn build
-        run: yarn build .
-      run-tests:
-  tests:
-    name: Tests:
+        run: npm run build .
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
