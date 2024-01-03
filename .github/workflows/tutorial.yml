@@ -1,7 +1,7 @@
 name: Main
 on: [push]
 jobs:
-  build and tests:
+  build-and-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
